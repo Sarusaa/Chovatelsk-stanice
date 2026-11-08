@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt – Chovná stanice TLAPKA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Domů</a>
+  <a href="nase-zvirata.html">Naše zvířata</a>
+  <a href="mladata.html">Štěňata / Koťata</a>
+  <a href="o-plemeni.html">O plemeni / Péče</a>
+  <a href="kontakt.html" class="aktivni">Kontakt / Rezervace</a>
+  <button id="prepinac">☾ Tmavý režim</button>
+</nav>
+
+<header>
+  <p class="maly-nadpis">SPOJTE SE S NÁMI</p>
+  <h1>Kontakt &amp; rezervace</h1>
+  <p class="uvod">Napište nebo zavolejte. Rádi si s vámi popovídáme a doporučíme mládě, které vám sedne.</p>
+  <div class="tlacitka">
+      <a class="tlacitko" href="kontakt.html#formular">Zažádat o rezervaci</a>
+      <a class="tlacitko svetle" href="kontakt.html#formular">Zeptat se na mládě</a>
+    </div>
+</header>
+
+<section class="pisek">
+  <div class="box">
+    <h2>Kontakty</h2>
+    <div class="kroky">
+      <div class="krok"><h3>TELEFON</h3><p><a href="tel:+420731340350">+420 731 340 350</a></p></div>
+      <div class="krok"><h3>E-MAIL</h3><p><a href="mailto:chovnastanice_tlapka@seznam.cz">stanice_tlapka@seznam.cz</a></p></div>
+      <div class="krok"><h3>SOCIÁLNÍ SÍTĚ</h3><p><a href="https://www.instagram.com/">instagram</a></p></div>
+      <div class="krok"><h3>PROVOZNÍ DOBA</h3><p>Po–Pá 16–20, So–Ne po domluvě</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="box">
+    <h2>Adresa &amp; návštěva</h2>
+    <div class="mapa">Zde bude mapa a adresa stanice</div>
+    <ul class="odrazky">
+      <li>Návštěva pouze po předchozí domluvě</li>
+      <li>Parkování přímo u domu <small>(upřesníte)</small></li>
+      <li>Před vstupem prosíme o vyčištění bot a umytí rukou kvůli zdraví mláďat</li>
+    </ul>
+  </div>
+</section>
+
+<section class="pisek" id="formular">
+  <div class="box">
+    <h2>Formulář zájemce</h2>
+    <p class="uvod">Odpovědi nám pomohou vybrat správné mládě. Cenu sdělíme po krátkém rozhovoru — dbáme na správný match.</p>
+    <form class="formular" action="mailto:chovnastanice_tlapka@seznam.cz" method="post" enctype="text/plain">
+      <label>Jméno<input type="text" name="jmeno" required></label>
+      <label>E-mail<input type="email" name="email" required></label>
+      <label>Telefon<input type="tel" name="telefon"></label>
+      <label>Mám zájem o
+        <select name="preference">
+          <option>Mládě, které je k dispozici</option>
+          <option>Plánovaný vrh (čekací listina)</option>
+          <option>Zatím se jen ptám</option>
+        </select>
+      </label>
+      <label>Jaké budou životní podmínky? (bydlení, zahrada, děti, další zvířata)<textarea name="podminky" rows="4"></textarea></label>
+      <label>Kolik času můžete psovi denně věnovat?<textarea name="cas" rows="2"></textarea></label>
+      <label class="souhlas"><input type="checkbox" name="gdpr" required> Souhlasím se zpracováním osobních údajů pro vyřízení poptávky (GDPR).</label>
+      <button class="tlacitko" type="submit">Odeslat poptávku</button>
+    </form>
+    <p class="uvod">Po odeslání se vám ozveme do 2 pracovních dnů. Další krok je krátký rozhovor a případně návštěva.</p>
+  </div>
+</section>
+
+<section>
+  <div class="box">
+    <h2>Dokumenty ke stažení</h2>
+    <ul class="odrazky">
+      <li><a href="#">Kupní smlouva (vzor, PDF)</a></li>
+      <li><a href="#">Chovatelský řád (PDF)</a></li>
+      <li><a href="#">Základní checklist výbavy (PDF)</a></li>
+    </ul>
+    <div class="tlacitka">
+      <a class="tlacitko" href="kontakt.html#formular">Zažádat o rezervaci</a>
+      <a class="tlacitko svetle" href="kontakt.html#formular">Zeptat se na mládě</a>
+    </div>
+  </div>
+</section>
+
+<footer>© Chovná stanice TLAPKA · chovnastanice_tlapka@seznam.cz · +420 731 340 350</footer>
+
+<div id="lista">
+  <a class="tlacitko" href="kontakt.html">Kontakt</a>
+  <a class="tlacitko svetle" href="mladata.html">Mláďata</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

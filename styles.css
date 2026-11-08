@@ -354,3 +354,89 @@ footer {
     line-height: 110px;
   }
 }
+
+/* ===== Doplnění pro stránky Štěňata, O plemeni, Kontakt ===== */
+.odrazky {
+  max-width: 600px;
+  margin: 24px auto 0;
+  padding-left: 20px;
+}
+
+.odrazky li { margin: 6px 0; }
+
+.odrazky a, .krok a { color: var(--hneda); }
+
+.krok.popis { text-align: left; }
+.krok.popis h3 { text-align: center; }
+
+.faq {
+  max-width: 700px;
+  margin: 30px auto 0;
+}
+
+.faq details {
+  background-color: var(--karta);
+  border: 2px solid var(--pisek);
+  border-radius: 16px;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.faq p { margin: 10px 0 0; }
+
+.mapa {
+  height: 260px;
+  margin-top: 30px;
+  background-color: var(--pisek);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--hneda);
+  text-align: center;
+}
+
+.formular {
+  max-width: 600px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formular label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.formular input[type="text"],
+.formular input[type="email"],
+.formular input[type="tel"],
+.formular select,
+.formular textarea {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px 14px;
+  border: 2px solid var(--hneda);
+  border-radius: 14px;
+  background-color: var(--karta);
+  color: var(--text);
+}
+
+.formular .souhlas {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.formular button { align-self: center; font-family: inherit; }
+
+html { scroll-behavior: smooth; }
