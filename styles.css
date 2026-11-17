@@ -4,6 +4,7 @@
   --hneda: #837873;
   --text: #25251f;
   --karta: #eeeeee;
+  --zavoj: rgba(255, 255, 255, 0.6);
 }
 
 body.dark {
@@ -12,9 +13,12 @@ body.dark {
   --hneda: #b08568;
   --text: #f1ece6;
   --karta: #26231f;
+  --zavoj: rgba(47, 41, 41, 0.6);
 }
 
 * { box-sizing: border-box; }
+
+
 body {
   margin: 0;
   font-family: "Jost", Arial, sans-serif;
@@ -22,6 +26,14 @@ body {
   color: var(--text);
   line-height: 1.5;
 }
+
+body.dark header {
+ background:
+    linear-gradient(var(--zavoj), var(--zavoj)),
+    url("jezevcici.jpg") center / cover no-repeat;
+}
+
+
 h1, h2, h3 { 
   letter-spacing: 2px;
   margin: 0; 
@@ -138,6 +150,15 @@ nav a.aktivni {
 header { 
   text-align: center;
   padding: 60px 20px 40px;
+  background:
+      linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+      url("jezevcici.jpg") center / cover no-repeat;
+    min-height: 90vh;
+}
+
+header h1 {
+    letter-spacing: 6px;
+    font-size: clamp(36px, 9vw, 90px);
 }
 
 .stitky {
